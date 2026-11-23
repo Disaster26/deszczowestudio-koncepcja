@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fotograf ślubny Warszawa i Garwolin | Deszcz'owe Studio</title>
+<meta name="description" content="Naturalne reportaże ślubne, sesje narzeczeńskie i plenerowe oraz reportaże z chrztu. Bez pozowania na siłę. Warszawa, Garwolin i cała Polska.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='17' fill='%23fff' stroke='%23161616' stroke-width='3'/%3E%3Cpath d='M14 12c-.6 2-4 5.6-4 8.2a4 4 0 0 0 8 0c0-2.6-3.4-6.2-4-8.2zM25 10c-.6 2-4 5.6-4 8.2a4 4 0 0 0 8 0c0-2.6-3.4-6.2-4-8.2zM20 20c-.6 2-4 5.6-4 8.2a4 4 0 0 0 8 0c0-2.6-3.4-6.2-4-8.2z' fill='%231d4f91'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/marcellus-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-m-720.webp" imagesrcset="img/hero-m-720.webp 720w, img/hero-m-1138.webp 1138w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1920.webp" imagesrcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" imagesizes="max(100vw, 150vh)" media="(min-width:761px)" fetchpriority="high">
+<style>
+@font-face{font-family:"Marcellus";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/marcellus-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Marcellus";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/marcellus-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/inter-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/inter-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--czern:#161616;--deszcz:#1d4f91;--deszcz2:#163e73;--tekst:#1b1d21;--tekst2:#555a63;--szary:#f1f3f5;--linia:#dfe2e6;--noc:#121417;--max:1240px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Inter",system-ui,sans-serif;font-size:17px;line-height:1.65;color:var(--tekst);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:"Marcellus",Georgia,serif;font-weight:400;line-height:1.15}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:52px;padding:0 26px;font:600 16px/1 "Inter",sans-serif;text-decoration:none;border:1.5px solid transparent;transition:background .2s,color .2s,border-color .2s;cursor:pointer}
+.btn-d{background:var(--deszcz);color:#fff}
+.btn-d:hover{background:var(--deszcz2)}
+.btn-b{border-color:rgba(255,255,255,.85);color:#fff}
+.btn-b:hover{background:#fff;color:var(--czern)}
+.btn svg{width:18px;height:18px;flex:none}
+.krople{display:block;width:46px;height:30px;margin-bottom:16px;color:var(--deszcz)}
+section[id]{scroll-margin-top:64px}
+
+/* naglowek */
+.top{position:absolute;inset:0 0 auto 0;z-index:20;color:#fff;background:linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,0))}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:96px;max-width:1440px}
+.logo img{width:196px;height:auto}
+.menu{display:flex;align-items:center;gap:26px;list-style:none}
+.menu a{text-decoration:none;font-size:15px;letter-spacing:.01em;opacity:.92}
+.menu a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
+.menu .tel{font-weight:700;opacity:1}
+.burger{display:none;background:none;border:0;color:#fff;width:48px;height:48px;cursor:pointer}
+.burger svg{width:28px;height:28px}
+.sticky{position:fixed;inset:0 0 auto 0;z-index:30;background:rgba(255,255,255,.97);box-shadow:0 1px 0 var(--linia);transform:translateY(-100%);transition:transform .25s;color:var(--czern)}
+.sticky.on{transform:none}
+.sticky .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:1440px}
+.sticky .logo img{width:118px}
+.sticky .btn{min-height:42px;padding:0 18px;font-size:15px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;background:#2a241c;overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:43% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(0,0,0,0) 38%,rgba(10,12,16,.62) 72%,rgba(10,12,16,.72)),linear-gradient(0deg,rgba(10,12,16,.45),rgba(10,12,16,0) 45%)}
+.hero .wrap{position:relative;z-index:2;width:100%;max-width:1440px;display:flex;justify-content:flex-end;padding-top:120px;padding-bottom:clamp(48px,9vh,110px)}
+.hero .tekst{max-width:640px}
+.hero h1{font-size:clamp(36px,3.6vw,58px);margin-bottom:20px}
+.hero p{font-size:clamp(16.5px,1.2vw,19px);color:#eceae6;margin-bottom:30px;max-width:44ch}
+.hero .akcje{display:flex;flex-wrap:wrap;gap:12px}
+
+/* sekcje */
+.sekcja{padding:clamp(64px,9vw,124px) 0}
+.szara{background:var(--szary)}
+.tyt{font-size:clamp(30px,3.2vw,46px);color:var(--czern);margin-bottom:16px;max-width:22ch}
+.lead{color:var(--tekst2);max-width:62ch;margin-bottom:40px}
+
+/* o mnie */
+.ja{display:grid;grid-template-columns:minmax(260px,420px) 1fr;gap:clamp(36px,6vw,96px);align-items:center}
+.obiektyw{position:relative;aspect-ratio:1;border-radius:50%;padding:12px;border:2px solid var(--czern)}
+.obiektyw img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.obiektyw svg{position:absolute;right:2%;top:4%;width:74px;height:62px;color:var(--deszcz);background:#fff;padding:8px 10px;border-radius:40px}
+.ja p{color:var(--tekst2);max-width:58ch;margin-bottom:16px}
+.ja .podpis{font-family:"Marcellus",serif;font-size:22px;color:var(--czern);margin-top:24px}
+
+/* oferta */
+.naglowek{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px}
+.naglowek .lead{margin-bottom:0}
+.strz{display:flex;gap:8px;flex:none}
+.strz button{width:50px;height:50px;border:1.5px solid var(--czern);background:transparent;color:var(--czern);cursor:pointer;display:grid;place-items:center;border-radius:50%;transition:background .2s,color .2s}
+.strz button:hover{background:var(--czern);color:#fff}
+.strz svg{width:20px;height:20px}
+.tor{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:24px;scrollbar-width:none;padding:2px 24px 6px;margin:0 -24px;cursor:grab;overscroll-behavior-x:contain}
+.tor::-webkit-scrollbar{display:none}
+.tor.ciag{cursor:grabbing;scroll-snap-type:none}
+.tor.ciag *{pointer-events:none}
+.usl{flex:0 0 calc((100% - 60px)/4);scroll-snap-align:start;user-select:none}
+.usl .fot{aspect-ratio:3/4;overflow:hidden;background:#d9dde2}
+.usl img{width:100%;height:100%;object-fit:cover;-webkit-user-drag:none;transition:transform .6s}
+.usl:hover img{transform:scale(1.03)}
+.usl h3{font-size:24px;color:var(--czern);margin:18px 0 8px}
+.usl p{font-size:15.5px;color:var(--tekst2)}
+.usl ul{list-style:none;margin-top:10px;font-size:15px;color:var(--tekst2)}
+.usl li{padding:5px 0 5px 20px;position:relative;border-top:1px solid var(--linia)}
+.usl li::before{content:"";position:absolute;left:3px;top:13px;width:7px;height:9px;background:var(--deszcz);border-radius:50% 50% 50% 50%/62% 62% 38% 38%;transform:rotate(0)}
+
+/* portfolio */
+.kadr{flex:0 0 min(62vw,760px);scroll-snap-align:center;user-select:none;margin:0}
+.kadr img{width:100%;aspect-ratio:3/2;object-fit:cover;-webkit-user-drag:none}
+.portfolio .tor{scroll-snap-type:x mandatory;gap:14px}
+.dalej{margin-top:30px}
+.link{font-weight:600;color:var(--deszcz);text-decoration:none;border-bottom:1.5px solid currentColor;padding-bottom:2px}
+
+/* instagram */
+.insta{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(36px,6vw,90px);align-items:center}
+.insta p{color:var(--tekst2);max-width:52ch;margin-bottom:16px}
+.siatka{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.siatka a{display:block;aspect-ratio:1;overflow:hidden;background:#d9dde2}
+.siatka img{width:100%;height:100%;object-fit:cover;transition:opacity .2s}
+.siatka a:hover img{opacity:.85}
+.konto{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;font-weight:600}
+.konto span{display:flex;align-items:center;gap:10px}
+.konto i{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--czern);display:grid;place-items:center;font-style:normal}
+.konto i svg{width:20px;height:20px}
+.uwaga{font-size:13.5px;color:var(--tekst2);margin-top:10px}
+
+/* opinie */
+.noc{background:var(--noc);color:#fff}
+.noc .tyt{color:#fff}
+.noc .krople{color:#8fb3e6}
+.opinie{display:grid;grid-template-columns:repeat(2,1fr);gap:0 clamp(32px,5vw,72px)}
+.opinie blockquote{padding:28px 0;border-top:1px solid rgba(255,255,255,.16)}
+.opinie p{font-family:"Marcellus",serif;font-size:clamp(19px,1.5vw,22px);line-height:1.5;color:#f1efeb}
+.opinie cite{display:block;margin-top:14px;font-style:normal;font-size:15px;color:#a9b4c4}
+
+/* wspolpraca */
+.dwie{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px)}
+.kroki{list-style:none;border-top:1.5px solid var(--czern)}
+.kroki li{padding:20px 0;border-bottom:1px solid var(--linia)}
+.kroki h3{font-size:22px;color:var(--czern);margin-bottom:4px}
+.kroki p{color:var(--tekst2);font-size:16px}
+details{border-bottom:1px solid var(--linia)}
+details:first-of-type{border-top:1.5px solid var(--czern)}
+summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font-weight:600;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:6px;top:27px;width:10px;height:10px;border-right:1.5px solid var(--czern);border-bottom:1.5px solid var(--czern);transform:rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:rotate(-135deg);top:31px}
+details p{padding:0 0 20px;color:var(--tekst2);font-size:16px}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(36px,6vw,90px)}
+.kontakt .lead{margin-bottom:28px}
+.duzy{display:block;font:400 clamp(30px,3vw,42px)/1.1 "Marcellus",serif;color:var(--czern);text-decoration:none;margin-bottom:10px}
+.mail{font-size:18px;color:var(--deszcz);font-weight:600;text-decoration:none}
+.gdzie{margin-top:18px;color:var(--tekst2)}
+form{background:#fff;padding:clamp(22px,3vw,36px);border:1px solid var(--linia)}
+.pola{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:14px;color:var(--tekst2);margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:1px solid #c5cad2;background:#fff;color:var(--tekst);border-radius:0}
+textarea{min-height:110px;resize:vertical}
+.pelne{grid-column:1/-1}
+form .btn{width:100%;margin-top:18px}
+form small{display:block;margin-top:12px;color:var(--tekst2);font-size:13px}
+
+footer{background:var(--noc);color:#b9bec7;padding:52px 0 28px;font-size:15px}
+.st{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.st img{width:150px}
+.st a{text-decoration:none}
+.st p{line-height:1.8}
+.dol{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:14px}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+@media (max-width:1080px){
+  .menu{display:none}
+  .burger{display:grid;place-items:center}
+  .menu.otw{display:flex;position:fixed;inset:0;z-index:40;background:var(--noc);flex-direction:column;justify-content:center;gap:24px}
+  .menu.otw a{font-size:23px}
+  .zamknij{position:absolute;top:20px;right:20px}
+  .usl{flex-basis:calc((100% - 40px)/3)}
+  .insta,.dwie,.kontakt{grid-template-columns:1fr}
+  .st{grid-template-columns:1fr 1fr}
+  .st>div:first-child{grid-column:1/-1}
+}
+@media (max-width:760px){
+  .top .wrap{height:76px}
+  .logo img{width:132px}
+  .hero{align-items:flex-end}
+  .hero{background:#15171b}
+  .hero picture{bottom:auto;height:70%}
+  .hero picture img{object-position:50% 30%}
+  .hero::after{background:linear-gradient(0deg,#15171b 0,#15171b 30%,rgba(21,23,27,.75) 42%,rgba(21,23,27,0) 62%)}
+  .hero .wrap{justify-content:flex-start;padding-bottom:28px}
+  .ja{grid-template-columns:1fr}
+  .obiektyw{max-width:300px}
+  .opinie{grid-template-columns:1fr}
+  .kadr{flex-basis:84vw}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 18px}
+  .hero h1{font-size:clamp(28px,7.7vw,34px);margin-bottom:12px}
+  .hero p{font-size:15.5px;margin-bottom:22px;line-height:1.55}
+  .hero .akcje{flex-direction:column;gap:10px}
+  .hero .btn{width:100%;min-height:50px}
+  .naglowek{flex-direction:column;align-items:flex-start}
+  .strz{display:none}
+  .tor{padding:2px 18px 6px;margin:0 -18px;gap:12px;scroll-padding-inline:18px}
+  .usl{flex-basis:80%}
+  .pola{grid-template-columns:1fr}
+  .st{grid-template-columns:1fr 1fr;gap:22px}
+}
+@media (max-width:640px) and (max-height:700px){
+  .hero h1{font-size:26px}
+  .hero p{font-size:15px;margin-bottom:18px}
+  .hero .btn{min-height:46px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="krople" viewBox="0 0 46 30"><path d="M9 3c-.7 2.4-6 7.4-6 11a6 6 0 0 0 12 0c0-3.6-5.3-8.6-6-11zM31 1c-.7 2.4-6 7.4-6 11a6 6 0 0 0 12 0c0-3.6-5.3-8.6-6-11zM21 13c-.7 2.2-5 6.4-5 9.6a5 5 0 0 0 10 0c0-3.2-4.3-7.4-5-9.6z" fill="currentColor"/></symbol>
+  <symbol id="tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 7.2 7.2l1.4-2.1 4.2 1.6V19a1.5 1.5 0 0 1-1.6 1.5C10.6 20 4 13.4 3.5 5.1A1.5 1.5 0 0 1 5 3.5z"/></symbol>
+  <symbol id="aparat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></g></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Deszcz'owe Studio, strona główna"><img src="img/logo-biale.png" width="400" height="162" alt="Deszcz'owe Studio"></a>
+    <ul class="menu" id="menu">
+      <li><a href="#o-mnie">O mnie</a></li>
+      <li><a href="#oferta">Oferta</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#opinie">Opinie</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a class="tel" href="tel:+48728296810">728 296 810</a></li>
+    </ul>
+    <button class="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="2" fill="none"/></svg></button>
+  </div>
+</header>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <div class="wrap">
+    <a class="logo" href="#" tabindex="-1"><img src="img/logo.png" width="400" height="162" alt=""></a>
+    <a class="btn btn-d" href="#kontakt" tabindex="-1">Zapytaj o termin</a>
+  </div>
+</div>
+
+<main>
+<section class="hero">
+  <picture>
+    <source media="(max-width:760px)" srcset="img/hero-m-720.webp 720w, img/hero-m-1138.webp 1138w" sizes="100vw">
+    <img src="img/hero-1920.webp" srcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" sizes="max(100vw, 150vh)" width="2560" height="1707" alt="Para młoda o zachodzie słońca, reportaż ślubny Deszcz'owe Studio" fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <div class="tekst">
+      <h1>Fotograf ślubny z Warszawy i Garwolina</h1>
+      <p>Naturalne reportaże i sesje, bez pozowania na siłę i bez presji. Tylko prawdziwe emocje, światło i bliskość, które tworzą Waszą historię.</p>
+      <div class="akcje">
+        <a class="btn btn-d" href="#kontakt">Zapytaj o wolny termin</a>
+        <a class="btn btn-b" href="#portfolio">Zobacz portfolio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja" id="o-mnie">
+  <div class="wrap ja">
+    <div class="obiektyw"><img src="img/marcin-560.webp" srcset="img/marcin-560.webp 560w, img/marcin-900.webp 900w" sizes="(max-width:760px) 300px, 420px" width="560" height="560" loading="lazy" decoding="async" alt="Marcin, fotograf Deszcz'owe Studio"><svg aria-hidden="true"><use href="#krople"/></svg></div>
+    <div>
+      <svg class="krople" aria-hidden="true"><use href="#krople"/></svg>
+      <h2 class="tyt">Jestem Marcin. Zatrzymuję to, co naprawdę najważniejsze.</h2>
+      <p>Uśmiech, który pojawia się tylko na ułamek sekundy. Dłoń, która szuka drugiej dłoni. Spojrzenie, które mówi więcej niż słowa.</p>
+      <p>Podczas ślubu jestem obok, ale nie przeszkadzam. Nie ustawiam ludzi, nie proszę o uśmiech, nie przerywam momentów. Obserwuję, czuję atmosferę i łapię chwile, które później stają się Waszymi najważniejszymi wspomnieniami.</p>
+      <p class="podpis">Marcin, Deszcz'owe Studio</p>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja szara" id="oferta">
+  <div class="wrap">
+    <div class="naglowek">
+      <div><svg class="krople" aria-hidden="true"><use href="#krople"/></svg><h2 class="tyt">Każda historia jest inna</h2><p class="lead">Jedne są ciche i spokojne, inne pełne śmiechu, wzruszeń i tańca do rana. Szczegółową ofertę przygotowuję indywidualnie, pod Wasz dzień.</p></div>
+      <div class="strz"><button type="button" data-t="t1" data-k="-1" aria-label="Poprzednie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" data-t="t1" data-k="1" aria-label="Następne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 5l7 7-7 7"/></svg></button></div>
+    </div>
+    <div class="tor" id="t1">
+      <article class="usl"><div class="fot"><img src="img/reportaz-480.webp" srcset="img/reportaz-480.webp 480w, img/reportaz-800.webp 800w" sizes="(max-width:640px) 80vw, (max-width:1080px) 31vw, 290px" width="480" height="640" loading="lazy" decoding="async" alt="Para młoda z bukietem po ceremonii" draggable="false"></div><h3>Reportaż ślubny</h3><p>Cały dzień, od porannego światła po nocne rozmowy przy stole.</p><ul><li>przygotowania</li><li>ceremonia</li><li>przyjęcie i wesele</li><li>krótka sesja w dniu ślubu albo w innym terminie</li></ul></article>
+      <article class="usl"><div class="fot"><img src="img/narzeczenska-480.webp" srcset="img/narzeczenska-480.webp 480w, img/narzeczenska-800.webp 800w" sizes="(max-width:640px) 80vw, (max-width:1080px) 31vw, 290px" width="480" height="640" loading="lazy" decoding="async" alt="Sesja narzeczeńska w trawach" draggable="false"></div><h3>Sesja narzeczeńska</h3><p>Czas tylko dla Was, w miejscu, które jest Wam bliskie: w lesie, w mieście, w domu.</p><ul><li>około 1-2 godziny</li><li>naturalne światło</li><li>bez sztywnego pozowania</li></ul></article>
+      <article class="usl"><div class="fot"><img src="img/plener-480.webp" srcset="img/plener-480.webp 480w, img/plener-800.webp 800w" sizes="(max-width:640px) 80vw, (max-width:1080px) 31vw, 290px" width="480" height="640" loading="lazy" decoding="async" alt="Sesja plenerowa nad wodą" draggable="false"></div><h3>Sesje plenerowe i rodzinne</h3><p>Bez pośpiechu i bez napięcia. Najpiękniej wychodzicie, kiedy zapominacie, że to sesja.</p><ul><li>swobodna atmosfera</li><li>las, miasto, dom</li><li>galeria online z wybranymi zdjęciami</li></ul></article>
+      <article class="usl"><div class="fot"><img src="img/chrzest-480.webp" srcset="img/chrzest-480.webp 480w, img/chrzest-800.webp 800w" sizes="(max-width:640px) 80vw, (max-width:1080px) 31vw, 290px" width="480" height="640" loading="lazy" decoding="async" alt="Reportaż z chrztu, rodzice z dzieckiem" draggable="false"></div><h3>Reportaż z chrztu</h3><p>Ceremonia i wszystko wokół niej: bliscy, drobne gesty, uśmiechy i wzruszenia.</p><ul><li>przygotowania w domu, jeśli chcecie</li><li>ceremonia w kościele</li><li>zdjęcia rodzinne i przyjęcie</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja portfolio" id="portfolio">
+  <div class="wrap">
+    <div class="naglowek">
+      <div><svg class="krople" aria-hidden="true"><use href="#krople"/></svg><h2 class="tyt">Wasze historie w moim obiektywie</h2><p class="lead">Czasem to cisza między spojrzeniami, a czasem śmiech, który wybucha bez powodu. Dlatego nie ustawiam ludzi, tylko fotografuję wtedy, gdy to ma sens.</p></div>
+      <div class="strz"><button type="button" data-t="t2" data-k="-1" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" data-t="t2" data-k="1" aria-label="Następne zdjęcie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 5l7 7-7 7"/></svg></button></div>
+    </div>
+    <div class="tor" id="t2">
+      <figure class="kadr"><img src="img/p-jmp_s_0011-640.webp" srcset="img/p-jmp_s_0011-640.webp 640w, img/p-jmp_s_0011-1100.webp 1100w" sizes="(max-width:760px) 84vw, 62vw" width="640" height="427" loading="lazy" decoding="async" alt="Para młoda na powalonym pniu w jesiennym lesie" draggable="false"></figure>
+      <figure class="kadr"><img src="img/p-akj_s_0043-640.webp" srcset="img/p-akj_s_0043-640.webp 640w, img/p-akj_s_0043-1100.webp 1100w" sizes="(max-width:760px) 84vw, 62vw" width="640" height="427" loading="lazy" decoding="async" alt="Panna młoda z woalką i pan młody" draggable="false"></figure>
+      <figure class="kadr"><img src="img/p-kas_r_0351-640.webp" srcset="img/p-kas_r_0351-640.webp 640w, img/p-kas_r_0351-1100.webp 1100w" sizes="(max-width:760px) 84vw, 62vw" width="640" height="427" loading="lazy" decoding="async" alt="Pierwszy taniec w świetle reflektorów" draggable="false"></figure>
+      <figure class="kadr"><img src="img/p-ak_s_0007-640.webp" srcset="img/p-ak_s_0007-640.webp 640w, img/p-ak_s_0007-1100.webp 1100w" sizes="(max-width:760px) 84vw, 62vw" width="640" height="427" loading="lazy" decoding="async" alt="Para młoda na skale nad doliną" draggable="false"></figure>
+      <figure class="kadr"><img src="img/p-kmg_s_0022-640.webp" srcset="img/p-kmg_s_0022-640.webp 640w, img/p-kmg_s_0022-1100.webp 1100w" sizes="(max-width:760px) 84vw, 62vw" width="640" height="427" loading="lazy" decoding="async" alt="Sesja ślubna w Rzymie przy Schodach Hiszpańskich" draggable="false"></figure>
+      <figure class="kadr"><img src="img/p-pbs_r_0605-640.webp" srcset="img/p-pbs_r_0605-640.webp 640w, img/p-pbs_r_0605-1100.webp 1100w" sizes="(max-width:760px) 84vw, 62vw" width="640" height="427" loading="lazy" decoding="async" alt="Para młoda przy podświetlonym napisie Miłość" draggable="false"></figure>
+      <figure class="kadr"><img src="img/p-ams_r_0469-640.webp" srcset="img/p-ams_r_0469-640.webp 640w, img/p-ams_r_0469-1100.webp 1100w" sizes="(max-width:760px) 84vw, 62vw" width="640" height="427" loading="lazy" decoding="async" alt="Taniec gości przy napisie LOVE" draggable="false"></figure>
+      <figure class="kadr"><img src="img/p-ms_s_044-640.webp" srcset="img/p-ms_s_044-640.webp 640w, img/p-ms_s_044-1100.webp 1100w" sizes="(max-width:760px) 84vw, 62vw" width="640" height="427" loading="lazy" decoding="async" alt="Para młoda na schodach" draggable="false"></figure>
+      <figure class="kadr"><img src="img/p-dml_s_0054-640.webp" srcset="img/p-dml_s_0054-640.webp 640w, img/p-dml_s_0054-1100.webp 1100w" sizes="(max-width:760px) 84vw, 62vw" width="640" height="427" loading="lazy" decoding="async" alt="Para młoda o zmierzchu w parku" draggable="false"></figure>
+      <figure class="kadr"><img src="img/p-kbc_s_0240-640.webp" srcset="img/p-kbc_s_0240-640.webp 640w, img/p-kbc_s_0240-1100.webp 1100w" sizes="(max-width:760px) 84vw, 62vw" width="640" height="427" loading="lazy" decoding="async" alt="Para młoda na piasku" draggable="false"></figure>
+      <figure class="kadr"><img src="img/p-apz_r_0315-640.webp" srcset="img/p-apz_r_0315-640.webp 640w, img/p-apz_r_0315-1100.webp 1100w" sizes="(max-width:760px) 84vw, 62vw" width="640" height="427" loading="lazy" decoding="async" alt="Ceremonia ślubna w cerkwi" draggable="false"></figure>
+      <figure class="kadr"><img src="img/p-chh_r_0019-640.webp" srcset="img/p-chh_r_0019-640.webp 640w, img/p-chh_r_0019-1100.webp 1100w" sizes="(max-width:760px) 84vw, 62vw" width="640" height="427" loading="lazy" decoding="async" alt="Dziecko w koszu podczas chrztu" draggable="false"></figure>
+    </div>
+    <p class="dalej"><a class="link" href="#portfolio">Pełne portfolio: śluby, sesje, chrzty</a></p>
+  </div>
+</section>
+
+<section class="sekcja szara" id="instagram">
+  <div class="wrap insta">
+    <div>
+      <svg class="krople" aria-hidden="true"><use href="#krople"/></svg>
+      <h2 class="tyt">Instagram na bieżąco, strona na lata</h2>
+      <p>Pary szukają fotografa na Instagramie, a zanim napiszą, sprawdzają w Google opinie i całe reportaże. Strona zbiera to w jednym miejscu: portfolio podzielone na śluby, sesje i chrzty, opinie par, ofertę i formularz zapytania o termin.</p>
+      <p>Nowe posty z Instagrama pokazują się na stronie same, więc nie trzeba niczego dodawać dwa razy.</p>
+      <a class="btn btn-d" href="https://www.instagram.com/deszczowe_studio/" target="_blank" rel="noopener">Obserwuj @deszczowe_studio</a>
+    </div>
+    <div>
+      <div class="konto"><span><i><svg aria-hidden="true"><use href="#aparat"/></svg></i>@deszczowe_studio</span></div>
+      <div class="siatka">
+        <a href="https://www.instagram.com/deszczowe_studio/" target="_blank" rel="noopener"><img src="img/ig-mm_n_0036-640.webp" width="640" height="640" loading="lazy" decoding="async" alt="Sesja w mieście nocą"></a>
+        <a href="https://www.instagram.com/deszczowe_studio/" target="_blank" rel="noopener"><img src="img/ig-chz_r_0029-640.webp" width="640" height="640" loading="lazy" decoding="async" alt="Uśmiechnięte dziecko na sesji"></a>
+        <a href="https://www.instagram.com/deszczowe_studio/" target="_blank" rel="noopener"><img src="img/ig-mm_r_0091-640.webp" width="640" height="640" loading="lazy" decoding="async" alt="Obrączki w wianku"></a>
+        <a href="https://www.instagram.com/deszczowe_studio/" target="_blank" rel="noopener"><img src="img/ig-kmg_n_0007-640.webp" width="640" height="640" loading="lazy" decoding="async" alt="Skok pary na sesji narzeczeńskiej"></a>
+        <a href="https://www.instagram.com/deszczowe_studio/" target="_blank" rel="noopener"><img src="img/ig-ak_n_0076-640.webp" width="640" height="640" loading="lazy" decoding="async" alt="Para na łące o zachodzie"></a>
+        <a href="https://www.instagram.com/deszczowe_studio/" target="_blank" rel="noopener"><img src="img/ig-chs_a_0066-640.webp" width="640" height="640" loading="lazy" decoding="async" alt="Obrączki na srebrnej tacy"></a>
+      </div>
+      <p class="uwaga">W podglądzie zdjęcia z obecnej strony. Na docelowej stronie w tym miejscu wyświetlają się automatycznie najnowsze posty z Instagrama.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja noc" id="opinie">
+  <div class="wrap">
+    <svg class="krople" aria-hidden="true"><use href="#krople"/></svg>
+    <h2 class="tyt">Słowa par, z którymi pracowałem</h2>
+    <div class="opinie">
+      <blockquote><p>„Marcin był z nami cały dzień, a jednocześnie jakby go nie było. Zdjęcia są pełne emocji, dokładnie takich, jakie czuliśmy. To nie są tylko fotografie. To wspomnienia.”</p><cite>Anna i Michał</cite></blockquote>
+      <blockquote><p>„Praca z Marcinem była czystą przyjemnością. Spokój, profesjonalizm i piękne kadry, które przerosły nasze oczekiwania.”</p><cite>Kasia i Tomek</cite></blockquote>
+      <blockquote><p>„Super zdjęcia! Wspaniała współpraca i podejście Marcina do tematu. Zero problemów i świetny kontakt. Dosłownie każdy gość znajdzie siebie uwiecznionego w najlepszych momentach zabawy.”</p><cite>Marcin i Marta</cite></blockquote>
+      <blockquote><p>„Kontakt bardzo dobry, zlecenie wykonane terminowo, a zdjęcia dostarczone w eleganckim drewnianym pudełku. Zdecydowanie polecamy tego fotografa!”</p><cite>Joanna i Przemek</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja" id="wspolpraca">
+  <div class="wrap dwie">
+    <div>
+      <svg class="krople" aria-hidden="true"><use href="#krople"/></svg>
+      <h2 class="tyt">Jak wygląda współpraca</h2>
+      <ul class="kroki">
+        <li><h3>Kontakt</h3><p>Napiszcie kilka słów o sobie i o Waszym dniu. Odpowiem możliwie szybko i zaproponuję dalsze kroki.</p></li>
+        <li><h3>Ustalenia</h3><p>Ustalamy szczegóły, podpisujemy umowę i rezerwujemy termin. To moment na wszystkie pytania.</p></li>
+        <li><h3>Wasz dzień</h3><p>Jestem z Wami, ale nie w centrum. Gotowe zdjęcia dostajecie w eleganckiej galerii online.</p></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="tyt" style="font-size:clamp(26px,2.4vw,34px);margin-top:46px">Najczęstsze pytania</h2>
+      <details><summary>Jak szybko odpowiadam?</summary><p>Zwykle w ciągu kilku godzin. Jeśli piszecie wieczorem albo w weekend, odezwę się najpóźniej następnego dnia.</p></details>
+      <details><summary>Czy fotografuję poza Warszawą i Garwolinem?</summary><p>Tak. Dojeżdżam w dowolne miejsce w Polsce i za granicą.</p></details>
+      <details><summary>Jak wygląda rezerwacja terminu?</summary><p>Po ustaleniach podpisujemy umowę i wpłacacie zadatek. Wtedy data jest zarezerwowana wyłącznie dla Was.</p></details>
+      <details><summary>Czy możemy porozmawiać przed ślubem?</summary><p>Oczywiście. Możemy umówić się na krótką rozmowę telefoniczną albo online i spokojnie omówić szczegóły.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja szara" id="kontakt">
+  <div class="wrap kontakt">
+    <div>
+      <svg class="krople" aria-hidden="true"><use href="#krople"/></svg>
+      <h2 class="tyt">Porozmawiajmy o Waszej historii</h2>
+      <p class="lead">Napiszcie kilka słów o sobie, o Waszym dniu i o tym, co jest dla Was ważne. Pomogę zaplanować wszystko tak, żeby zdjęcia były naturalne i pełne emocji.</p>
+      <a class="duzy" href="tel:+48728296810">728 296 810</a>
+      <a class="mail" href="mailto:kontakt@deszczowestudio.pl">kontakt@deszczowestudio.pl</a>
+      <p class="gdzie">Warszawa, Garwolin i cała Polska</p>
+    </div>
+    <form onsubmit="event.preventDefault();this.querySelector('small').textContent='To podgląd strony, formularz zacznie wysyłać wiadomości na docelowej stronie.'">
+      <div class="pola">
+        <div><label for="f1">Imiona</label><input id="f1" autocomplete="name"></div>
+        <div><label for="f2">Telefon albo e-mail</label><input id="f2" autocomplete="email"></div>
+        <div><label for="f3">Rodzaj zdjęć</label><select id="f3"><option>Reportaż ślubny</option><option>Sesja narzeczeńska</option><option>Sesja plenerowa albo rodzinna</option><option>Reportaż z chrztu</option><option>Inne</option></select></div>
+        <div><label for="f4">Data i miejsce</label><input id="f4"></div>
+        <div class="pelne"><label for="f5">Kilka słów o Was i o Waszym dniu</label><textarea id="f5"></textarea></div>
+      </div>
+      <button class="btn btn-d" type="submit">Zapytaj o termin</button>
+      <small>Odpowiadam zwykle w ciągu kilku godzin.</small>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="st">
+      <div><img src="img/logo-biale.png" width="400" height="162" alt="Deszcz'owe Studio" loading="lazy"><p style="margin-top:14px">Fotografia pełna światła,<br>bliskości i prawdziwych emocji.</p></div>
+      <div><p>Warszawa, Garwolin<br>i cała Polska</p><p><a href="https://www.instagram.com/deszczowe_studio/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/Deszczowe.Studio/" target="_blank" rel="noopener">Facebook</a></p></div>
+      <div><p><a href="tel:+48728296810">tel. 728 296 810</a><br><a href="mailto:kontakt@deszczowestudio.pl">kontakt@deszczowestudio.pl</a></p></div>
+    </div>
+    <div class="dol"><span>© 2026 Deszcz'owe Studio</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=deszczowestudio.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.querySelectorAll('.strz button').forEach(function(b){b.addEventListener('click',function(){var t=document.getElementById(b.dataset.t),k=t.firstElementChild;t.scrollBy({left:(+b.dataset.k)*(k.offsetWidth+16),behavior:'smooth'})})});
+  document.querySelectorAll('.tor').forEach(function(tor){
+    var x0,s0,ciag=false;
+    tor.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;x0=e.clientX;s0=tor.scrollLeft;ciag=true});
+    window.addEventListener('pointermove',function(e){if(!ciag)return;var d=e.clientX-x0;if(Math.abs(d)>4)tor.classList.add('ciag');tor.scrollLeft=s0-d});
+    window.addEventListener('pointerup',function(){if(!ciag)return;ciag=false;if(tor.classList.contains('ciag')){tor.classList.remove('ciag')}});
+  });
+  var m=document.getElementById('menu'),bg=document.querySelector('.burger');
+  bg.addEventListener('click',function(){var o=m.classList.toggle('otw');bg.setAttribute('aria-expanded',o);if(o&&!m.querySelector('.zamknij')){var z=document.createElement('li');z.innerHTML='<button class="burger zamknij" type="button" aria-label="Zamknij menu"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2"/></svg></button>';m.prepend(z);z.firstChild.addEventListener('click',function(){m.classList.remove('otw');bg.setAttribute('aria-expanded',false)})}});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('otw');bg.setAttribute('aria-expanded',false)}});
+  var st=document.getElementById('sticky');
+  addEventListener('scroll',function(){st.classList.toggle('on',scrollY>innerHeight*.8)},{passive:true});
+})();
+</script>
+</body>
+</html>
